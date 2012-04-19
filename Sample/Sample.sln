@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample.csproj", "{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementPack", "..\ElementPack\ElementPack.csproj", "{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Release|iPhone.Build.0 = Release|Any CPU
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{91F80F54-2F30-4E5B-BCF2-2033CDABAABB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Release|iPhone.Build.0 = Release|iPhone
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{DF6D1AF0-C9B4-41A7-93AB-FA490AC25F1A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Sample.csproj
+	EndGlobalSection
+EndGlobal
