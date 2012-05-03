@@ -13,6 +13,7 @@
   <Types>
     <Namespace Name="ElementPack">
       <Type Name="CounterElement" Kind="Class" />
+      <Type Name="MultilineEntryElement" Kind="Class" />
       <Type Name="RowBadgeElement" Kind="Class" />
     </Namespace>
   </Types>

@@ -40,5 +40,6 @@
   <ItemGroup>
     <Compile Include="RowBadgeElement.cs" />
     <Compile Include="CounterElement.cs" />
+    <Compile Include="SimpleMultilineEntryElement.cs" />
   </ItemGroup>
 </Project>
