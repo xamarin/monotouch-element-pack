@@ -52,11 +52,16 @@ namespace Sample
 				new CounterElement ("Mask with decimal", "0,00"),
 			};
 
+			var entrySection = new Section ("Multiline Elements"){
+				new SimpleMultilineEntryElement ("", "This is the\nmultiline element") { Editable = true } 
+			};
+			
 			var root = new RootElement ("ElementPack Samples") {
 				new Section ("New styles"){
 					new RootElement ("RowBadgeElement") { badgedSection },
 				}, 
-				counterSection
+				counterSection,
+				entrySection,
 			};
 			
 			main = new DialogViewController (root);
