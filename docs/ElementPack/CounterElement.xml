@@ -1,0 +1,176 @@
+<Type Name="CounterElement" FullName="ElementPack.CounterElement">
+  <TypeSignature Language="C#" Value="public class CounterElement : MonoTouch.Dialog.StringElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CounterElement extends MonoTouch.Dialog.StringElement" />
+  <AssemblyInfo>
+    <AssemblyName>ElementPack</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoTouch.Dialog.StringElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The CounterElement is used to get user input for decimal values.</summary>
+    <remarks>
+      <para>
+        The CounterElement is used to get user input for decimal values and is
+        intialized with two string values: the caption for the entry and the
+        current value. Both values are required. The initial numeric value may
+        be the empty string.
+      </para>
+      <para>
+        When the CounterElement is selected, the numeric value is displayed
+        with a picker providing a wheel for each of the digit positions. An
+        additional wheel is shown at the left, allowing the number to grow
+        with one digit position. This leftmost wheel has a blank instead of
+        a 0.
+      </para>
+      <para>
+        So 12.50 will be shown with as a picker with 5 wheels having values
+        blank, 1, 2, 5 and 0. When e.g. 6 is selected with the leftmost wheel,
+        the value becomes 612.50 and subsequent selects will show a picker
+        with 6 wheels having values blank, 6, 1, 2, 5 and 0. If now the 6 and
+        1 are set to zero, the value becomes 2.50 and subsequent selects will
+        show a picker with 4 wheels with values blank, 2, 5 and 0.
+      </para>
+      <para>
+        The decimal wheels have a lightgrey background. Decimal wheels will
+        only be present if the input value contains a decimal point (, or .)
+        and the number of decimal wheels is fixed as indicated by the initial
+        value.
+      </para>
+      <para>
+        This element was contributed by Guido Van Hoecke.
+      </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CounterElement (string caption, string counter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string caption, string counter) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="counter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="caption">To be added.</param>
+        <param name="counter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="counterPicker">
+      <MemberSignature Language="C#" Value="public MonoTouch.UIKit.UIPickerView counterPicker;" />
+      <MemberSignature Language="ILAsm" Value=".field public class MonoTouch.UIKit.UIPickerView counterPicker" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoTouch.UIKit.UIPickerView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePicker">
+      <MemberSignature Language="C#" Value="public virtual MonoTouch.UIKit.UIPickerView CreatePicker ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoTouch.UIKit.UIPickerView CreatePicker() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoTouch.UIKit.UIPickerView</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCell">
+      <MemberSignature Language="C#" Value="public override MonoTouch.UIKit.UITableViewCell GetCell (MonoTouch.UIKit.UITableView tv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class MonoTouch.UIKit.UITableViewCell GetCell(class MonoTouch.UIKit.UITableView tv) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoTouch.UIKit.UITableViewCell</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tv" Type="MonoTouch.UIKit.UITableView" />
+      </Parameters>
+      <Docs>
+        <param name="tv">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="model">
+      <MemberSignature Language="C#" Value="protected ElementPack.CounterElement.CounterPickerDataModel model;" />
+      <MemberSignature Language="ILAsm" Value=".field family class ElementPack.CounterElement/CounterPickerDataModel model" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ElementPack.CounterElement+CounterPickerDataModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="public override void Selected (MonoTouch.Dialog.DialogViewController dvc, MonoTouch.UIKit.UITableView tableView, MonoTouch.Foundation.NSIndexPath path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Selected(class MonoTouch.Dialog.DialogViewController dvc, class MonoTouch.UIKit.UITableView tableView, class MonoTouch.Foundation.NSIndexPath path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dvc" Type="MonoTouch.Dialog.DialogViewController" />
+        <Parameter Name="tableView" Type="MonoTouch.UIKit.UITableView" />
+        <Parameter Name="path" Type="MonoTouch.Foundation.NSIndexPath" />
+      </Parameters>
+      <Docs>
+        <param name="dvc">To be added.</param>
+        <param name="tableView">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -39,5 +39,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="RowBadgeElement.cs" />
+    <Compile Include="CounterElement.cs" />
   </ItemGroup>
 </Project>

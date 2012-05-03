@@ -44,11 +44,19 @@ namespace Sample
 				},
 			};
 			
+			var counterSection = new Section("Counter Elements") {
+				new CounterElement ("With comma", "88,6"),
+				new CounterElement ("With point", "17.97"),
+				new CounterElement ("No decimals", "14"),
+				new CounterElement ("No initial value", ""),
+				new CounterElement ("Mask with decimal", "0,00"),
+			};
+
 			var root = new RootElement ("ElementPack Samples") {
 				new Section ("New styles"){
 					new RootElement ("RowBadgeElement") { badgedSection },
-				}
-				
+				}, 
+				counterSection
 			};
 			
 			main = new DialogViewController (root);
