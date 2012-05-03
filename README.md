@@ -6,6 +6,13 @@ A place to host various MonoTouch.Dialog.Elements that users can use.
 RowBadgeElement
 ===============
 
+Shows a row with a colored badge
+
+SimpleMultilineEntryElement 
+===========================
+
+A simple element that provides multi-line editing
+
 CounterElement
 ==============
 
