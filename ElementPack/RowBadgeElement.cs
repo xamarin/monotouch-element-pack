@@ -60,8 +60,39 @@ namespace ElementPack
 		{
 			Tapped += tapped;
 		}
+				
+		public RowBadgeElement (string caption, string badgeValue, string hexColor) : this(caption, badgeValue)
+		{			
+			int red = 0, green = 0, blue = 0;
+			
+			if (hexColor.Length == 6) {					    
+				red = int.Parse (hexColor.Substring (0, 2), System.Globalization.NumberStyles.AllowHexSpecifier);			
+				green = int.Parse (hexColor.Substring (2, 2), System.Globalization.NumberStyles.AllowHexSpecifier);			
+				blue = int.Parse (hexColor.Substring (4, 2), System.Globalization.NumberStyles.AllowHexSpecifier);				
+			} else if (hexColor.Length == 3) {					    
+				red = int.Parse (
+					hexColor.Substring (0, 1) + hexColor.Substring (0, 1),
+					System.Globalization.NumberStyles.AllowHexSpecifier
+				);	
+				green = int.Parse (
+					hexColor.Substring (1, 1) + hexColor.Substring (1, 1),
+					System.Globalization.NumberStyles.AllowHexSpecifier
+				);
+				blue = int.Parse (
+					hexColor.Substring (2, 1) + hexColor.Substring (2, 1),
+					System.Globalization.NumberStyles.AllowHexSpecifier
+				);		
+			}
+			
+			this.Color = UIColor.FromRGB (red, green, blue);
+		}
 		
 		public RowBadgeElement (string caption, string badgeValue, NSAction tapped) : this(caption, badgeValue)
+		{
+			Tapped += tapped;
+		}
+		
+		public RowBadgeElement (string caption, string badgeValue, NSAction tapped, string hexColor) : this(caption, badgeValue, hexColor)
 		{
 			Tapped += tapped;
 		}
@@ -247,6 +278,16 @@ namespace ElementPack
 				badge.SetNeedsDisplay ();
 			}
 		}
+	}
+	
+	public static class BadgeColors
+	{
+		public const string DEFAULT = "999";
+		public const string SUCCESS = "468847";
+		public const string WARNING = "F89406";
+		public const string IMPORTANT = "B94A48";
+		public const string INFO = "3A87AD";
+		public const string INVERSE = "333";
 	}
 }
 
