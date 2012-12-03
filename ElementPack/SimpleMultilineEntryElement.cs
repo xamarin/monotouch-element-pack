@@ -256,11 +256,15 @@ namespace ElementPack
 			var newValue = entry.Text;
 			if (newValue == Value)
 				return;
-			
+		
+			var currentPos = entry.SelectedRange.Location;	
 			Value = newValue;
 			
 			if (Changed != null)
 				Changed (this, EventArgs.Empty);
+
+			if (currentPos > 0)
+				entry.SelectedRange = new NSRange(currentPos, 0);
 		}
 		
 		protected override void Dispose (bool disposing)
