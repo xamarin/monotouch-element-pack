@@ -29,6 +29,8 @@ namespace Sample
 				new RowBadgeElement ("Colored", "color", () => {}) {
 					Color = UIColor.FromRGBA (0.792f, 0.197f, 0.219f, 1f)
 				},
+				new RowBadgeElement ("Colored with default coloring", "5", BadgeColors.WARNING) {
+				},
 				new RowBadgeElement ("With radius", "9f", () => {}) {
 					Radius = 9f,
 					Color = UIColor.FromRGBA (0.197f, 0.592f, 0.219f, 1f)
@@ -41,7 +43,7 @@ namespace Sample
 					BackgroundColor = UIColor.Red,
 					Radius = 9f,
 					Color = UIColor.FromRGBA (0.197f, 0.592f, 0.219f, 1f)
-				},
+				}
 			};
 			
 			var counterSection = new Section("Counter Elements") {
